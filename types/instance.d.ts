@@ -49,3 +49,9 @@ declare function getphysicalconfigdata(object: UnionOperation): LuaTuple<[string
  * @param data The model data to set the clipboard to.
  */
 declare function setrbxclipboard(data: string): void;
+
+/**
+ * Returns if you are the network owner.
+ * @returns A boolean value
+ */
+declare function isnetworkowner(): boolean;
