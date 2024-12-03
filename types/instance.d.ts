@@ -52,4 +52,4 @@ declare function setrbxclipboard(data: string): void;
  * Returns if you are the network owner.
  * @returns A boolean value
  */
-declare function isnetworkowner(): boolean;
+declare function isnetworkowner(part: BasePart): boolean;
