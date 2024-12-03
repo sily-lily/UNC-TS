@@ -228,4 +228,4 @@ declare function setscriptable(object: Instance, property: string, value: boolea
  * Returns namecall method
  * This is useful trust me bro
  */
-declare function getnamecallmethod(): void;
+declare function getnamecallmethod(): string;
