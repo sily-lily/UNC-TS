@@ -1,4 +1,4 @@
-# 🖥️ rbxts-hax
+# 🖥️ UNC-TS
 
 Roblox-TS typings for scripting engines following [UNC standards](https://github.com/unified-naming-convention/NamingStandard) and common nonstandard APIs.
 
@@ -7,5 +7,5 @@ Remember to focus on compatibility! Functions can be missing in some environment
 ## 🔌 Installation
 
 ```
-npm install --save-dev github:richie0866/rbxts-hax
+npm install --save-dev github:mr-suno/unc-ts
 ```
