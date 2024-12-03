@@ -1,5 +1,3 @@
-// https://github.com/unified-naming-convention/NamingStandard/tree/main/api/instance
-
 /**
  * Activates a ClickDetector with `event` from `distance` studs away. When
  * absent, `distance` defaults to 0. `event` defaults to `"MouseClick"`.
