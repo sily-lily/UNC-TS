@@ -223,3 +223,9 @@ declare const setthreadidentity: typeof setidentity | undefined;
  * @returns The original Scriptable status.
  */
 declare function setscriptable(object: Instance, property: string, value: boolean): boolean;
+
+/**
+ * Returns namecall method
+ * This is useful trust me bro
+ */
+declare function getnamecallmethod(): void;
