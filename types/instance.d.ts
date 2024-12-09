@@ -15,6 +15,22 @@ declare function fireclickdetector(
 ): void;
 
 /**
+ * Fires a TouchInterest, similar to `fireclickdetector`.
+ * @param BasePart The part that touches the TouchInterest.
+ * @param Part The part being touched.
+ * @param isTouching Determines if you're currently touching the part.
+ * const character: Model = game.GetService("Players").LocalPlayer.Character as Model;
+ * const part: Part = workspace.FindFirstChild("Checkpoint") as Part;
+ * firetouchinterest(character, part, 0);
+ * firetouchinterest(character, part, 1);
+ */
+declare function firetouchinterest(
+	BasePart: BasePart | Part,
+	Part: BasePart | Part,
+	isTouching: number
+): void;
+
+/**
  * Returns the callback assigned to a property of the given instance.
  * @param object The instance to get the callback from.
  * @param property The name of the callback property.
