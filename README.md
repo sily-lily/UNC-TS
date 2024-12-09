@@ -9,3 +9,6 @@ Remember to focus on compatibility! Functions can be missing in some environment
 ```
 npm install --save-dev github:mr-suno/unc-ts
 ```
+
+## 🗞️ Latest Additions
+1. **`December 9th, 2024`** : Introduced **`firetouchinterest`**
