@@ -19,6 +19,7 @@ declare function fireclickdetector(
  * @param BasePart The part that touches the TouchInterest.
  * @param Part The part being touched.
  * @param isTouching Determines if you're currently touching the part.
+ * @example
  * const character: Model = game.GetService("Players").LocalPlayer.Character as Model;
  * const part: Part = workspace.FindFirstChild("Checkpoint") as Part;
  * firetouchinterest(character, part, 0);
