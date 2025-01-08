@@ -104,7 +104,7 @@ declare namespace debug {
 	 * print(1, 5, debug.getstack(1, 3)); // 1 5 5
 	 * print(1, 5, debug.getstack(1, 2)); // 1 5 1
 	 */
-	function getstack(level: number, index: number): unknown;
+	function getstack(level: number, index?: number): unknown;
 
 	/**
 	 * Returns the upvalue at `index` in the function or level `fn`.
