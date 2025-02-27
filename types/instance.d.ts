@@ -15,6 +15,17 @@ declare function fireclickdetector(
 ): void;
 
 /**
+ * Triggers a ProximityPrompt from any distance.
+ * @param ProximityPrompt The ProximityPrompt Instance that's being triggered.
+ * @example
+ * const prompt: ProximityPrompt = Workspace.FindFirstChild("MyProximityPrompt") as ProximityPrompt;
+ * fireproximityprompt(prompt);
+ */
+declare function fireproximityprompt(
+	ProximityPrompt: ProximityPart
+): void;
+
+/**
  * Fires a TouchInterest, similar to `fireclickdetector`.
  * @param BasePart The part that touches the TouchInterest.
  * @param Part The part being touched.
