@@ -22,7 +22,7 @@ declare function fireclickdetector(
  * fireproximityprompt(prompt);
  */
 declare function fireproximityprompt(
-	ProximityPrompt: ProximityPart
+	ProximityPrompt: ProximityPrompt
 ): void;
 
 /**
