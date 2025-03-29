@@ -19,6 +19,12 @@
 declare function getcustomasset(file: string, preventcache?: boolean): string;
 
 /**
+ * Triggers any given RBXScriptSignal provided.
+ * @param Type: RBXScriptSignal
+ */
+declare const replicatesignal(signal: RBXScriptSignal);
+
+/**
  * Returns the name and version of the current executor.
  * @returns The name and version.
  */
