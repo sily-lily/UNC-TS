@@ -122,3 +122,8 @@ declare const toclipboard: typeof setclipboard | undefined;
  * @param frames The FPS cap.
  */
 declare function setfpscap(frames: number): void;
+
+/**
+ * Returns the current FPS cap if possible.
+ */
+declare function getfpscap(): number;
