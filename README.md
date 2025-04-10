@@ -13,4 +13,5 @@ npm install --save-dev github:mr-suno/unc-ts
 ## 🗞️ Latest Additions
 1. **`December 9th, 2024`** : Introduced **`firetouchinterest`**
 2. **`February 26th, 2025`** : Introduced **`fireproximityprompt`**
-3. **`April 9th, 2025`** : Introduced **`getfpscap`**
+3. **`March 26, 2025`** : Introduced **`replicatesignal`**
+4. **`April 9th, 2025`** : Introduced **`getfpscap`**
