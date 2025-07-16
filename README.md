@@ -7,7 +7,7 @@ Remember to focus on compatibility! Functions can be missing in some environment
 ## 🔌 Installation
 
 ```
-npm install --save-dev github:mr-suno/unc-ts
+npm install --save-dev github:sily-lily/unc-ts
 ```
 
 ## 🗞️ Latest Additions
