@@ -117,10 +117,10 @@ declare function getinstances(): readonly Instance[];
  * Returns a list of ModuleScripts that have been loaded in the game. If
  * `filterCoreScripts` is true, only returns ModuleScripts that are not core
  * scripts.
- * @param filterCoreScripts Whether to filter core scripts.
+ * @param excludeCore Whether to include/exclude CoreScripts.
  * @returns A list of ModuleScripts.
  */
-declare function getloadedmodules(filterCoreScripts?: boolean): readonly ModuleScript[];
+declare function getloadedmodules(excludeCore?: boolean): readonly ModuleScript[];
 
 /**
  * Like `getinstances`, but returns only instances that are not descendants of
@@ -227,5 +227,13 @@ declare function setscriptable(object: Instance, property: string, value: boolea
 /**
  * Returns namecall method
  * This is useful trust me bro
+
+ * Additional:
+ * This function returns the latest namecall method used in either an Instance or an Object
+ * Example:
+
+ * game.FindFirstChildOfClass('ReplicatedStorage');
+ * print(getnamecallmethod());
+ * Output: FindFirstChildOfClass
  */
 declare function getnamecallmethod(): string;
