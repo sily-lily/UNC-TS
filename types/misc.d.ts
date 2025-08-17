@@ -33,7 +33,7 @@ declare function identifyexecutor(): LuaTuple<[string, string]>;
  * @alias identifyexecutor
  * @hidden
  */
-declare const getexecutorname: typeof identifyexecutor | undefined;
+declare function getexecutorname(): string;
 
 /**
  * Compresses the given string using the LZ4 compression algorithm.
