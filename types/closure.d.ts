@@ -1,7 +1,7 @@
 // https://github.com/unified-naming-convention/NamingStandard/tree/main/api/closure
 
 /**
- * Returns whether the current function was called by the executor.
+ * Returns whether the current function was called by the executor or if the function was called in an executor-made thread.
  */
 declare function checkcaller(): boolean;
 
