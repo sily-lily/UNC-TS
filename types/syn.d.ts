@@ -25,6 +25,7 @@ declare namespace syn {
 	function protect_gui(object: GuiObject): void;
 	function unprotect_gui(object: GuiObject): void;
 	function is_beta(): boolean;
+    function is_luau(): boolean;
 	function secure_call<T extends Callback>(
 		fn: T,
 		caller:
