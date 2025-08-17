@@ -4,6 +4,7 @@
 // as best practice.
 
 type HashAlgorithm = "sha1" | "sha384" | "sha512" | "md5" | "sha256" | "sha3-224" | "sha3-256" | "sha3-512";
+type CipherModes = "CBC" | "ECB" | "CTR" | "CFB" | "OFB" | "GCM";
 
 /**
  * Handles data encryption and decryption.
@@ -58,16 +59,17 @@ declare namespace crypt {
 	 * @param iv The IV to use.
 	 * @returns The decrypted data.
 	 */
-	function decrypt(data: string, key: string, iv?: string): string;
+	function decrypt(data: string, key: string, iv?: string, mode?: CipherModes): string;
 
 	/**
-	 * Encrypts the given data using AES (ctr mode) with the key and IV.
+	 * Encrypts the given data using AES encryption (ctr mode) with the key and IV.
 	 * @param data The data to encrypt.
 	 * @param key The key to use.
 	 * @param iv The IV to use.
+  	 * @param mode The cipher mode to use. (Default mode is CBC)
 	 * @returns The encrypted data.
 	 */
-	function encrypt(data: string, key: string, iv?: string): string;
+	function encrypt(data: string, key: string, iv?: string, mode?: CipherModes): LuaTuple<[string, string]>;
 
 	/**
 	 * Returns a randomly generated string of length `length`. The result is
