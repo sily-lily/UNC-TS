@@ -25,6 +25,12 @@ declare function getcustomasset(file: string, preventcache?: boolean): string;
 declare function replicatesignal(signal: RBXScriptSignal): any;
 
 /**
+ * An older, more supported version of `replicatesignal`.
+ * @param Type: RBXScriptSignal
+ */
+declare function firesignal(signal: RBXScriptSignal): any;
+
+/**
  * Returns the name and version of the current executor.
  * @returns The name and version.
  */
