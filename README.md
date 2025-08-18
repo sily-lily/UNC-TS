@@ -9,9 +9,3 @@ Remember to focus on compatibility! Functions can be missing in some environment
 ```
 npm install --save-dev github:sily-lily/unc-ts
 ```
-
-## 🗞️ Latest Additions
-1. **`December 9th, 2024`** : Introduced **`firetouchinterest`**
-2. **`February 26th, 2025`** : Introduced **`fireproximityprompt`**
-3. **`March 26, 2025`** : Introduced **`replicatesignal`**
-4. **`April 9th, 2025`** : Introduced **`getfpscap`**
