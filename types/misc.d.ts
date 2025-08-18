@@ -25,10 +25,18 @@ declare function getcustomasset(file: string, preventcache?: boolean): string;
 declare function replicatesignal(signal: RBXScriptSignal): any;
 
 /**
- * An older, more supported version of `replicatesignal`.
- * @param Type: RBXScriptSignal
+ * Fires `signal` from `args` (replicatesignal, but fire the signal from the client)
+ * @param signal - The signal to fire
+ * @param args - The arguments to pass to the signal listeners
  */
-declare function firesignal(signal: RBXScriptSignal): any;
+declare function firesignal(signal: RBXScriptSignal, ...args: unknown[]): void;
+
+/**
+ * Hooks a function to a signal without connecting it.
+ * @param signal - The signal to hook into
+ * @param callback - The function to be called when the signal fires
+ */
+declare function hooksignal<C extends unknown[]>(signal: RBXScriptSignal, callback: (...args: C) => void): void;
 
 /**
  * Returns the name and version of the current executor.
